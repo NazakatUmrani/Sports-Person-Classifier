@@ -18,6 +18,10 @@ The model is built using the following Python dependencies, which are listed in 
 - python313Packages.flask
 - python313Packages.flask-cors
 
+## Backend
+
+The backend is built using Flask Python and is located in the `backend` directory.
+
 ## Model
 
 The model is trained on sportsman dataset, which is located in the `Model` directory. The model is trained using the `Step 2: w2d transformation and train.py` file.
@@ -30,3 +34,7 @@ The `Model` folder contains the dataset of 7 persons (Babar Azam, Cristiano Rona
 - **opencv folder** — Contains all haarcascasde xml files including the face and eye detection that are used to find the face and 2 eyes.
 - **Step 1: crop_images.py** — It finds the face and 2 eyes in the image and crops it.
 - **Step 2: w2d transformation and train.py** — This one performs wavelet transformation on the cropped image and then runs the full training pipeline, including splitting, training, and exporting the model.
+
+## Running the Application
+
+To run the backend, navigate to the `backend` directory and run `python server.py`.

@@ -2,6 +2,35 @@
 
 This project is a full stack project, containing a frontend, backend and model trained to predict sports person for a few selected persons. The frontend is built using React and the backend is built using Flask Python.
 
+## Demo
+
+### 🎥 Video Demo
+https://github.com/nazakatumrani/Sports-Person-Classifier/raw/main/demo/video.mkv
+
+*(Click the link to watch the demo video)*
+
+### 🖼️ Screenshots
+
+<p align="center">
+  <img src="demo/251206_030326.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="demo/251206_030347.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="demo/251206_030446.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="demo/251206_030534.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="demo/251206_030642.png" width="600" />
+</p>
+
 ## Dependencies
 
 The model is built using the following Python dependencies, which are listed in the `shell.nix` file:
@@ -17,6 +46,10 @@ The model is built using the following Python dependencies, which are listed in 
 - python313Packages.joblib
 - python313Packages.flask
 - python313Packages.flask-cors
+
+## Frontend
+
+The frontend is built using React (Vite) with ShadcnUI and is located in the `frontend` directory.
 
 ## Backend
 
@@ -37,4 +70,4 @@ The `Model` folder contains the dataset of 7 persons (Babar Azam, Cristiano Rona
 
 ## Running the Application
 
-To run the backend, navigate to the `backend` directory and run `python server.py`.
+To run the application, navigate to the `frontend` directory and run `npm run dev`. To run the backend, navigate to the `backend` directory and run `python server.py`.

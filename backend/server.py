@@ -24,6 +24,9 @@ def classify_image():
         
         estimated_result = util.classify_image(image)
         
+        if estimated_result == "No face with 2 eyes detected.":
+            raise ValueError(estimated_result)
+        
         res = jsonify({
             'result': estimated_result,
             'num_to_person': util.get_num_to_person()
